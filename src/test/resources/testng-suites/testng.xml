@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="WebAutomationSuite">
+	<listeners>
+		<listener class-name="listeners.TestListener" />
+		<listener class-name="listeners.RetryListener" />
+	</listeners>
+	<test name="UI Tests">
+		<classes>
+			<class name="web.WebSampleTest" />
+		</classes>
+	</test>
+</suite>

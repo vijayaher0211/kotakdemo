@@ -1,0 +1,14 @@
+# Maven build output
+target/
+
+# Test reports
+reports/
+test-output/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Logs
+*.logs
