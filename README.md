@@ -52,7 +52,7 @@ It is designed to be **scalable** and **maintainable**, and will be extended to 
 ## 📥 Installation & Setup
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/vijayaher0211/kotakdemo.git
 
 # Navigate to project directory
 cd your-repo-name
