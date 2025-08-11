@@ -37,7 +37,7 @@ public class BaseClass {
 
 
 	private static ExtentReports extent;
-	private static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
+	private static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();	
 	protected Logger logger = Log.getLogger(this.getClass());
 
 	String reportDir = ReadConfigFile.get("reportPath");
@@ -50,7 +50,7 @@ public class BaseClass {
 		
 		logger.info("Initializing Extent Report...");
 		
-		String reportPath = System.getProperty("user.dir") + reportDir+ "/TestReport_"
+		String reportPath = System.getProperty("user.dir") +"/"+ reportDir+ "TestReport_"
 				+ ScreenshotUtils.getCurrentDateTime() + ".html";
 		ExtentSparkReporter spark = new ExtentSparkReporter(reportPath);
 		spark.config().setDocumentTitle("Automation Report");

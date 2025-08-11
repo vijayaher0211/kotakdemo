@@ -41,15 +41,10 @@ public class BrowserFactory {
 		// String browserName = ReadConfigFile.getBrowserName();
 	    logger.info("Thread {} launching browser: {}", Thread.currentThread().getId(), browserName);
 
-//		logger.info("Launching local browser: {}", browserName);
-
 		try {
 			switch (browserName.toLowerCase()) {
 			case "chrome":
-				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--start-maximized");
-				options.addArguments("--remote-allow-origins=*");
-				driver.set(new ChromeDriver(options));
+				driver.set(new ChromeDriver());
 				break;
 
 			case "firefox":
